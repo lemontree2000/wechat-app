@@ -15,10 +15,12 @@
 }
 
 swiper-item image {
-  width: 100%;
+  /* width: 100%; */
+  width: 100vw;
+  height: 100vw;
   display: inline-block;
   overflow: hidden;
-  height:562.5rpx;
+  /* height:562.5rpx; */
 }
 .swiper-container .dots{  
   position: absolute;  

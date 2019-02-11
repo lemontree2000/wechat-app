@@ -86,7 +86,7 @@ App({
     // 判断是否登录
     let token = wx.getStorageSync('token');
     if (!token) {
-      that.goLoginPageTimeOut()
+      // that.goLoginPageTimeOut()
       return
     }
     wx.request({
@@ -97,7 +97,7 @@ App({
       success: function (res) {
         if (res.data.code != 0) {
           wx.removeStorageSync('token')
-          that.goLoginPageTimeOut()
+          // that.goLoginPageTimeOut()
         }
       }
     })
@@ -166,13 +166,13 @@ App({
   },
   globalData:{
     userInfo:null,
-    subDomain: "tz", // 如果你的域名是： https://api.it120.cc/abcd 那么这里只要填写 abcd
+    subDomain: "yxmall", //tz 如果你的域名是： https://api.it120.cc/abcd 那么这里只要填写 abcd
     version: "4.1.0",
     note:'增加小程序购物单支持',
-    appid: "wxa46b09d413fbcaff", // 您的小程序的appid
+    appid: "wxc060ca1ce3c418de", // 您的小程序的appid
     shareProfile: '百款精品商品，总有一款适合您', // 首页转发的时候话术
     isConnected: true, // 网络是否连接
-    _path: 'https://api.it120.cc/tz' // 原项目路由配置在页面中，改为配置项
+    _path: 'https://api.it120.cc/yxmall' // 原项目路由配置在页面中，改为配置项
   }
   /*
   根据自己需要修改下单时候的模板消息内容设置，可增加关闭订单、收货时候模板消息提醒；

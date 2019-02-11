@@ -30,7 +30,7 @@ Page({
   aboutUs : function () {
     wx.showModal({
       title: '关于我们',
-      content: '本系统基于开源小程序商城系统 https://github.com/EastWorld/wechat-app-mall 搭建，祝大家使用愉快！',
+      content: '外婆家果蔬生鲜将不断优化产品品质,提高服务质量,”惠及”每个家庭,努力把外婆家做成新余“健康食品”的代名词',
       showCancel:false
     })
   },
